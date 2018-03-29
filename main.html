@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yam B</title>
+    <link href="https://fonts.googleapis.com/css?family=Mate" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="images\BRFT.png" alt="top page icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Header !-->
+    <div class="back1">
+        <div class="header">
+            <h1 class="wrb">
+
+                WE ARE BAREFOOT</h1>
+        </div>
+    </div>
+
+    <!-- Header End !-->
+
+    <section id="wrapper" class="skewed">
+        <div class="layer bottom">
+            <div class="content-wrap">
+                <div class="content-body">
+                    <h1><b id="play" type="btn" class="btn btn-link" onclick="playWill()">Will Not</b></h1>
+                    <p>3:30</p>
+                </div>
+                <img src="images/black.png">
+            </div>
+        </div>
+        <div class="layer top">
+            <div class="content-wrap">
+                <div class="content-body">
+                    <h1 id="play" type="btn" class="btn btn-link" onclick="play5ths()">5th's</h1>
+                    <p>4:30</p>
+                </div>
+                <img src="images/white.png">
+            </div>
+        </div>
+        <div class="handle"></div>
+    </section>
+
+    <div id="about" class="section-a">
+        <div class="why">
+            <h1><a href="#" title="Why??">Why</a></h1>
+        </div>
+        <div class="who">
+            <h1><a href="#">Who</a></h1>
+        </div>
+        <div class="what">
+            <h1><a href="#">What</a></h1>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="back2">
+            <ul class="accordion">
+                <li class="tab">
+                    <div class="Youtube">
+                        <a href="https://www.youtube.com/channel/UCuy0OxF9jhdk2avpu8q4QLg">Youtube</a>
+                    </div>
+                    <div class="content">
+                        <h1>YouTube</h1>
+                        <p>Stay tuned for new videos!</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <div class="Facebook">
+                        <a href="https://www.facebook.com/bebarefoot">Facebook</a>
+                    </div>
+                    <div class="content">
+                        <h1>Facebook</h1>
+                        <p>Be our friends!</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <div class="Instegram">
+                        <a href="https://www.instagram.com/barefootband/">Instegram</a>
+                    </div>
+                    <div class="content">
+                        <h1>Instegram</h1>
+                        <p>Get a look behind the scenes</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
+
+    <audio id="playWill" data-song="will" preload="auto">
+    <source src="Music/willnot.mp3" type="audio/mpeg">
+  </audio>
+    <audio id="play5ths" data-song="5ths" preload="auto">
+    <source src="Music/5ths.mp3" type="audio/mpeg">
+  </audio>
+    <script src="main.js"></script>
+</body>

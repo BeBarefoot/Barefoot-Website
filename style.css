@@ -1,0 +1,363 @@
+ @font-face {
+     font-family: 'Genericons';
+     src: url("../fonts/genericons-regular-webfont.woff") format("woff"), url("../fonts/genericons-regular-webfont.eot") format("truetype");
+ }
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     border: 0;
+ }
+ 
+ body {
+     font-size: 100%;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #333;
+     background: #ccc;
+ }
+ /* Header */
+ 
+ .header {
+     position: relative;
+ }
+ 
+ .header h1 {
+     top: 50%;
+     line-height: 10vw;
+     text-align: center;
+     font-family: 'Mate', serif;
+     letter-spacing: 9px;
+     color: snow;
+ }
+ 
+ .header h1:hover {
+     text-decoration-line: line-through;
+ }
+ /* Backround Images */
+ 
+ .back1,
+ .back2 {
+     position: relative;
+     max-width: 100%;
+     height: auto;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     opacity: 0.7;
+ }
+ 
+ .back1 {
+     background-image: url('Images/feet.png');
+     min-height: 30%;
+     background-position-y: -15rem;
+ }
+ 
+ .back2 {
+     background-image: url('Images/back2.png');
+     width: 100%;
+     min-height: 30%;
+ }
+ /* Transition Section */
+ 
+ #wrapper {
+     position: relative;
+     width: 100%;
+     min-height: 55vw;
+     overflow: hidden;
+ }
+ 
+ .layer {
+     position: absolute;
+     width: 100vw;
+     min-height: 55vw;
+     overflow: hidden;
+ }
+ 
+ .layer .content-wrap {
+     position: absolute;
+     width: 100vw;
+     min-height: 55vw;
+ }
+ 
+ .layer .content-body {
+     width: 25%;
+     position: absolute;
+     top: 50%;
+     text-align: center;
+     transform: translateY(-50%);
+     color: #fff;
+ }
+ 
+ .layer img {
+     position: absolute;
+     width: 80%;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+ 
+ .layer h1 {
+     font-size: 7vw;
+ }
+ 
+ .layer p {
+     font-size: 5vw;
+ }
+ 
+ .bottom {
+     background: #222;
+     z-index: 1;
+ }
+ 
+ .bottom .content-body {
+     left: 7%;
+ }
+ 
+ .bottom h1 {
+     color: #fdab00
+ }
+ 
+ .top {
+     background: #eee;
+     color: #222;
+     z-index: 2;
+     width: 50vw;
+ }
+ 
+ .top .content-body {
+     right: 7%;
+     color: #222;
+ }
+ /* Handle Section */
+ 
+ .handle {
+     position: absolute;
+     height: 100%;
+     display: block;
+     background-color: indigo;
+     width: 5px;
+     top: 0;
+     left: 50%;
+     z-index: 3;
+ }
+ 
+ .skewed .handle {
+     top: 50%;
+     transform: rotate(30deg) translateY(-50%);
+     height: 100%;
+     transform-origin: top;
+ }
+ 
+ .skewed .top {
+     transform: skew(-30deg);
+     margin-left: -1000px;
+     width: calc(50vw + 1000px);
+ }
+ 
+ .skewed .top .content-wrap {
+     transform: skew(30deg);
+     margin-left: 1000px;
+ }
+ /* Buttons Section */
+ 
+ #about {
+     margin: 2px;
+     display: grid;
+     grid-gap: 20px;
+     grid-template-columns: repeat(12, 1fr);
+     overflow: hidden;
+ }
+ 
+ a {
+     background-color: darkgrey;
+     text-decoration: none;
+     padding: 8 2em;
+     padding-top: 5;
+     border-radius: 20px;
+ }
+ 
+ .section-a {
+     background-color: transparent;
+ }
+ 
+ .why {
+     grid-column: 2/4;
+ }
+ 
+ .who {
+     grid-column: 6/8;
+ }
+ 
+ .what {
+     grid-column: 10/12;
+ }
+ 
+ a:hover {
+     background-color: rgb(192, 201, 192)
+ }
+ /* Bottom Accordion */
+ 
+ footer {
+     margin: 10px auto;
+     width: 100%;
+     height: auto;
+ }
+ 
+ .accordion h1 {
+     color: snow;
+     margin-bottom: 10px;
+     text-align: center;
+ }
+ 
+ .accordion {
+     background: transparent;
+     width: 100%;
+     display: block;
+     list-style-type: none;
+     overflow: hidden;
+     font-size: 0;
+ }
+ 
+ .tab {
+     left: 38%;
+     display: inline-block;
+     background-color: #444;
+     border-right: #333 1px solid;
+     width: 100px;
+     height: 200px;
+     overflow: hidden;
+     position: relative;
+     margin: 0;
+     transition: all 0.5s ease-in-out 0.1s;
+ }
+ 
+ .tab:hover {
+     width: 450px;
+ }
+ 
+ .tab:hover .social a:before {
+     margin-left: -100px;
+ }
+ 
+ .tab:hover .social a:after {
+     margin-left: -5px;
+ }
+ 
+ .tab .content {
+     background: #fff;
+     width: 400px;
+     height: 200px;
+     margin-left: 100px;
+     padding: 50px 0 0 15px;
+     position: relative;
+ }
+ 
+ .tab .content h1 {
+     color: plum;
+     font-size: 2.5rem;
+     margin-bottom: 10px;
+ }
+ 
+ .tab .content p {
+     font-size: 1rem;
+     line-height: 1.4rem;
+     padding-right: 30px;
+ }
+ 
+ .social a:after,
+ .social a:before {
+     transition: all 0.4s ease-in-out 0.1s;
+     width: 100px;
+     height: 200px;
+     position: absolute;
+     text-indent: 0;
+     padding-top: 90px;
+     padding-left: 25px;
+     display: block;
+     font: normal 30px genericons;
+     color: #fff;
+ }
+ 
+ .social a:after {
+     font-size: 48px;
+     padding-left: 20px;
+     padding-top: 80px;
+     margin-left: 100px;
+ }
+ 
+ .youtube a:before,
+ .youtube a:after {
+     content: '\f213';
+ }
+ 
+ .youtube a:after {
+     background-color: #ff0000;
+ }
+ 
+ .facebook a:before,
+ .facebook a:after {
+     content: '\f204';
+ }
+ 
+ .facebook a:after {
+     background-color: #3b5998;
+ }
+ 
+ .instagram a:before,
+ .instagram a:after {
+     content: '\f215';
+ }
+ 
+ .instagram a:after {
+     background-color: #6dc993;
+ }
+ 
+ @media (max-width: 950px) {
+     footer {
+         width: 70%;
+     }
+     .tab {
+         display: block;
+         width: 100%;
+         border-bottom: 3px #333 solid;
+     }
+     .accordion {
+         display: block;
+         min-width: 450px;
+         height: auto;
+     }
+     .tab .content {
+         width: 85%;
+     }
+     .tab:hover {
+         width: 100%;
+     }
+ }
+ 
+ @media (max-width: 560px) {
+     #about {
+         display: block;
+         text-align: center;
+         margin: auto;
+     }
+     .header h1 {
+         line-height: 6rem;
+     }
+     .back1,
+     .back2 {
+         background-attachment: scroll;
+         width: 70%;
+         height: auto;
+     }
+     footer {
+         width: 100%;
+     }
+     .accordion {
+         width: 120%;
+         min-width: 80;
+     }
+     .tab {
+         left: 0;
+     }
+ }
