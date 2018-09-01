@@ -17,5 +17,8 @@ document.addEventListener('DOMContentLoaded', wrap => {
     });   
 });
 
-    document.getElementById("click5").addEventListener('click', play5ths => document.getElementById("play5ths").play());
-    document.getElementById("clickW").addEventListener('click', playWill => document.getElementById("playWill").play());
+    document.getElementById("click5").addEventListener('click', play5ths =>
+            document.getElementById("play5ths").play());
+
+    document.getElementById("clickW").addEventListener('click', playWill =>
+            document.getElementById("playWill").play());
