@@ -1,5 +1,5 @@
 
- 
+
  * {
      margin: 0;
      padding: 0;
@@ -393,7 +393,6 @@
         min-width: 320px;
       }
     
-    
      #about {
          display: block;
          text-align: center;
@@ -407,7 +406,6 @@
          height: auto;
          width: 100%;
          background-attachment: scroll;
-         
          height: auto;
      }
     
